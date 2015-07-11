@@ -3,5 +3,5 @@ rvm:
  - "2.1.3"
 
 script:
- - chmod +x ./script/cibuild 
+ - chmod +x ./scripts/cibuild 
  - ./scripts/cibuild
