@@ -13,7 +13,3 @@ github_username:  niclassahlin
 
 # Build settings
 markdown: kramdown
-
-gems:
-  #- octopress-autoprefixer
-  #- susy
