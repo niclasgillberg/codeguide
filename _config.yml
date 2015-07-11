@@ -15,5 +15,5 @@ github_username:  niclassahlin
 markdown: kramdown
 
 gems:
-  - octopress-autoprefixer
-  - susy
+  #- octopress-autoprefixer
+  #- susy
