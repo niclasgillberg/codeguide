@@ -1,7 +1,12 @@
 language: ruby
-rvm: 
- - "2.1.3"
-
+rvm:
+- 2.1.3
 script:
- - chmod +x ./scripts/cibuild 
- - ./scripts/cibuild
+- chmod +x ./scripts/cibuild
+- "./scripts/cibuild"
+deploy:
+  provider: divshot
+  skip_cleanup: true
+  api_key:
+    secure: I6w43sECSzgtd81cLwd4Gg2WqOzPgtBLQHg+7Fj6EU770h1zFfWRsJPLkmcUCso2Vi5ceIIrvxzAkllDtn05IsLv74t5NVd6AHV51tJDNiMhnbkXIbh0MLlBLu3eD7fAuK42k+4GZ6KPkIiD1vzE/C8er50NL32MHVuh/HiaX3siTUP5sMaHvmWC6h6PZNRc+YPqwnKM1Br+Rj/YOourtHfkiBeANUThFEh8R6igI+nZ7Z4F8hc0D0f5IqJGiO2wyFGzHvW5MKHC6mGi8AWP5YccWBKZmujfdEn5i3gypGHfMnKXOw4bF2+fqWylOD0gODDYqKiasxfjcDoU2nOnmR5rWYcKogNsoxFUbFLV0609KuVdHMbAPMFei6KlMzYlCPVeN8Q5SqkMos5Lr+JsIP7t6PotBoD4iBvSNqEbN3u+otIHIfK83GEGbqsfIXeRktS+2JgjlBsnZOeAGO/XWrELWKZr06HsJirOthkzbpoFp9yaQLtCOwIkXrCssQCrHTR7uDaEXKm9E3iZr+uZmB83/WpZy/KCeAubaS6OMIJdFa7NaUTG/FvyRy5YNGF5XWXZTAkkObiiHIbdkZVzvkqKHWAt2Skm5o54Qe3PlCr9UrTBhGOgsAG2ieBDAb1EYVhyRPwcoJxqD5MsraeQk5z5J7rDsQbsWG4/su9bS6g=
+  
