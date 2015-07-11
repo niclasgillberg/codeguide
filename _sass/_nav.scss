@@ -1,0 +1,51 @@
+@mixin site-titles($color) {
+  text-align: center;
+  font-weight: bold;
+  
+  a {
+    color: $color;
+  }
+}
+
+.site-title {
+  @include site-titles($accent-color);
+
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.site-subtitle {
+  @include site-titles($main-foreground);
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.nav-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: right;
+
+  .nav-category {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $accent-color;
+  }
+
+  a {
+    color: $nav-link-color;
+  }
+}
+
+.sub-nav-list {
+  @extend .nav-list;
+
+  padding-right: 16px;
+
+  .nav-item {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+}

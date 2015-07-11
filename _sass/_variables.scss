@@ -1,14 +1,20 @@
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans Pro",sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     8px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$main-foreground: #ccc;
+$main-background: #4a4a4a;
+$accent-color: hsl(37, 91%, 55%);
+$accent-background: #292929;
+$subtle-accent-color: #e0e0e0;
+$complementary-color: #008cba;
+$divider-color: #8c8c8c;
+$code-background: #393939;
+$code-border: 1px solid #666;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -20,4 +26,5 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$navigation-background-color: hsl(217,44%,35%);
+$navigation-background-color: hsl(0,0%,20%);
+$nav-link-color: hsl(0,0%,95%);

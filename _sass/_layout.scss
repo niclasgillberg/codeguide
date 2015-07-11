@@ -13,6 +13,12 @@
     flex: 0 0 300px;
     height: 100%;
     background-color: $navigation-background-color;
+    border-right: 1px solid $divider-color;
+
+    .wrapper {
+        padding-right: $spacing-unit * 2;
+        padding-left: $spacing-unit * 2;
+    }
 }
 
 /**
@@ -20,8 +26,25 @@
 */
 
 .pageContent {
-    
+    flex-grow: 1;
 }
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit * 4;
+    padding-left: $spacing-unit * 4;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit * 2;
+        padding-left: $spacing-unit * 2;
+    }
+}
+
+
 
 
 /**
@@ -36,81 +59,68 @@
     position: relative;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+// .site-nav {
+//     float: right;
+//     line-height: 56px;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
+//     .menu-icon {
+//         display: none;
+//     }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+//     .page-link {
+//         color: $text-color;
+//         line-height: $base-line-height;
 
-    .menu-icon {
-        display: none;
-    }
+//         // Gaps between nav items, but not on the first one
+//         &:not(:first-child) {
+//             margin-left: 20px;
+//         }
+//     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+//     @include media-query($on-palm) {
+//         position: absolute;
+//         top: 9px;
+//         right: 30px;
+//         background-color: $background-color;
+//         border: 1px solid $grey-color-light;
+//         border-radius: 5px;
+//         text-align: right;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
+//         .menu-icon {
+//             display: block;
+//             float: right;
+//             width: 36px;
+//             height: 26px;
+//             line-height: 0;
+//             padding-top: 10px;
+//             text-align: center;
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+//             > svg {
+//                 width: 18px;
+//                 height: 15px;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+//                 path {
+//                     fill: $grey-color-dark;
+//                 }
+//             }
+//         }
 
-            > svg {
-                width: 18px;
-                height: 15px;
+//         .trigger {
+//             clear: both;
+//             display: none;
+//         }
 
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
+//         &:hover .trigger {
+//             display: block;
+//             padding-bottom: 5px;
+//         }
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
+//         .page-link {
+//             display: block;
+//             padding: 5px 10px;
+//         }
+//     }
+// }
 
 
 
@@ -187,9 +197,6 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
-}
 
 .page-heading {
     font-size: 20px;
