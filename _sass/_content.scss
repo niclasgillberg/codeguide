@@ -1,0 +1,14 @@
+@import "variables";
+
+.content {
+
+  > .wrapper > * {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $accent-color;
+  }
+}

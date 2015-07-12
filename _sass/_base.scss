@@ -104,9 +104,10 @@ a {
  * Blockquotes
  */
 blockquote {
+    padding-left: $spacing-unit;
+    margin-left: 0;
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    border-left: 4px solid transparentize($grey-color-light, 0.6);
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
