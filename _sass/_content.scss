@@ -22,5 +22,13 @@
 
     .highlight {
         flex: 1 0 300px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        align-content: stretch;
+
+        > pre {
+            width: 100%;
+        }
     }
 }

@@ -10,7 +10,7 @@
 */
 
 .navigation {
-    flex: 0 0 300px;
+    flex: 0 0 $navbar-width;
     height: 100%;
     background-color: $navigation-background-color;
     border-right: 1px solid $divider-color;
@@ -25,8 +25,9 @@
 * Site content
 */
 
-.content {
+.page-content {
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .wrapper {
