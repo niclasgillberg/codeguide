@@ -10,4 +10,6 @@ Even though I have my own preferred style of writing code, it is essential that 
 
 >"Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
+>"Every line of code should appear to be written by a single person, no matter the number of contributors." - Mark Otto
+
 
