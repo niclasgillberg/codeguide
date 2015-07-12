@@ -9,10 +9,15 @@
 .section {
     display: flex;
     flex-flow: row wrap;
+    align-items: stretch;
 
     .description {
         flex: 0 1 600px;
         margin-right: $spacing-unit * 2;
+
+        > ul {
+            padding-left: $spacing-unit * 2;
+        }
     }
 
     .highlight {
