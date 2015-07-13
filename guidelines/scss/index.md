@@ -42,6 +42,99 @@ These are the practices I do my best to follow when writing SCSS. As with the re
 {% endhighlight %}
 </div>
 
+## Selectors
+
+<div class="section" markdown="1">
+<div class="description" markdown="1">
+* Always strive to keep the specificity as low as possible. This makes the styles more maintainable, and enables a better flow from general styles towards more specific styles. 
+* Don't use IDs when styling. They no longer provide any notable performance benefit over classes, they only increase the specificity of your selector.
+* Use element selectors only for base styles. Use classes when you need to get more specific than that. Classes better describe the intent you are trying to convey, while the intent of an element can be very vague.
+* Introduce new classes instead of long selectors.
+</div>
+
+{% highlight scss %}
+// Bad
+#nav {}
+#nav > ul > li > a {}
+.content-wrapper > div {}
+
+// Good
+.nav {}
+.nav-link {}
+.content {}
+
+{% endhighlight %}
+</div>
+
 ## Naming
+
+<div class="section" markdown="1">
+<div class="description" markdown="1">
+
+</div>
+
+{% highlight scss %}
+
+{% endhighlight %}
+</div>
+
+## Vendor prefixes
+
+<div class="section" markdown="1">
+<div class="description" markdown="1">
+Use Autoprefixer. 
+
+Or Prefixfree. 
+
+Or whatever tool you like that does the job, but don't do it yourself. Vendor prefixes makes the code harder to read and creates noice when only very few of the declarations are actually used by any single browser. 
+
+Besides, who remembers every vendor prefix and keeps up to date when they can be dropped? Well, an automated tool does, so use it!
+</div>
+
+{% highlight scss %}
+// Bad
+.selector {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:         stretch;
+  -webkit-justify-content:  stretch;
+      -ms-flex-pack:        stretch;
+          justify-content:  stretch;
+}
+
+// Good
+.selector {
+    display: flex;
+    justify-content: stretch;
+}
+
+{% endhighlight %}
+</div>
+
+## Nesting
+
+<div class="section" markdown="1">
+<div class="description" markdown="1">
+</div>
+
+{% highlight scss %}
+
+{% endhighlight %}
+</div>
+
+## File structure
+
+<div class="section" markdown="1">
+<div class="description" markdown="1">
+</div>
+
+{% highlight scss %}
+
+{% endhighlight %}
+</div>
+
+
 
 

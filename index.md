@@ -12,4 +12,11 @@ Even though I have my own preferred style of writing code, it is essential that 
 
 >"Every line of code should appear to be written by a single person, no matter the number of contributors." - Mark Otto
 
+The inspiration for this site comes from reading similair guides, including
+
+* Codeguide.co by @mdo
+* Idiomatic CSS by @necolas
+* CSS Guidelines by @csswizardry
+* And many more...
+
 

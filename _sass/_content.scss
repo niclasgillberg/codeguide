@@ -6,6 +6,10 @@
     color: $accent-color;
 }
 
+.content h2 {
+    font-weight: 700;
+}
+
 .section {
     display: flex;
     flex-flow: row wrap;
@@ -14,6 +18,7 @@
     .description {
         flex: 0 1 600px;
         margin-right: $spacing-unit * 2;
+        font-size: 1.1rem;
 
         > ul {
             padding-left: $spacing-unit * 2;
